@@ -9,6 +9,29 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        page: 'hsl(var(--background))',
+        text: {
+          DEFAULT: 'hsl(var(--text))',
+          disabled: 'hsl(var(--text-disabled))',
+        },
+        primary: {
+          DEFAULT: 'hsl(var(--primary))',
+          hover: 'hsl(var(--primary-hover))',
+        },
+        success: {
+          DEFAULT: 'hsl(var(--success))',
+          hover: 'hsl(var(--success-hover))',
+        },
+        warning: {
+          DEFAULT: 'hsl(var(--warning))',
+          hover: 'hsl(var(--warning-hover))',
+        },
+        danger: {
+          DEFAULT: 'hsl(var(--danger))',
+          hover: 'hsl(var(--danger-hover))',
+        },
+      },
       keyframes: {
         'accordion-down': {
           from: { height: '0' },

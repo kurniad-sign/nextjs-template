@@ -3,25 +3,34 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background: 240 33% 99%;
+
+  --text: 223 29% 9%;
+  --text-disabled: 219 30% 79%;
+
+  --border: 224 43% 80%;
+  --border-hover: 224 41% 75%;
+  --border-disabled: 224 46% 86%;
+
+  --primary: 223 98% 47%;
+  --primary-hover: 223 100% 26%;
+
+  --success: 144, 82%, 28%;
+  --success-hover: 144, 100%, 21%;
+
+  --warning: 22 100% 49%;
+  --warning-hover: 22 100% 47%;
+
+  --danger: 354 85% 49%;
+  --danger-hover: 354 97% 42%;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: hsl(var(--text));
+  background-color: hsl(var(--background));
 }
