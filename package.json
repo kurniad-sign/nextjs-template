@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "format": "pnpm dlx prettier --write . --ignore-path .gitgignore",
     "dev": "rimraf .next && next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "lint:fix": "npm run format && npm run lint -- --fix",
     "typecheck": "tsc --noEmit",
     "postinstall": "prisma generate"
   },
