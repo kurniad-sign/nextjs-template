@@ -2,12 +2,8 @@ import { ComponentPropsWithRef, ElementType, ForwardedRef } from 'react';
 
 import { cn } from '@/src/lib/utils';
 
-import {
-  As,
-  DistributiveOmit,
-  ELEMENT_OPTIONS,
-  fixedForwardRef,
-} from './types';
+import { DistributiveOmit, fixedForwardRef } from '../common/types';
+import { As, ELEMENT_OPTIONS } from './types';
 import { headingVariant, HeadingVariantProps } from './variant';
 
 const UnHeading = <TAs extends As>(
