@@ -2,7 +2,7 @@ import { ComponentPropsWithRef, ElementType, ForwardedRef } from 'react';
 
 import { cn } from '@/src/lib/utils';
 
-import { DistributiveOmit, fixedForwardRef } from '../common/types';
+import { DistributiveOmit, fixedForwardRef } from '../../common/types';
 import { textVariant, TextVariantProps } from './variant';
 
 type TextAs = 'p' | 'div' | 'span';

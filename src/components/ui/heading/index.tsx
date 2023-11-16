@@ -2,7 +2,7 @@ import { ComponentPropsWithRef, ElementType, ForwardedRef } from 'react';
 
 import { cn } from '@/src/lib/utils';
 
-import { DistributiveOmit, fixedForwardRef } from '../common/types';
+import { DistributiveOmit, fixedForwardRef } from '../../common/types';
 import { As, ELEMENT_OPTIONS } from './types';
 import { headingVariant, HeadingVariantProps } from './variant';
 
