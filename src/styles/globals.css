@@ -4,25 +4,71 @@
 
 :root {
   --background: 240 33% 99%;
+  --component-background-1: 220 37% 97%;
+  --component-background-2: 224 43% 93%;
 
+  /* Surface Color Variables */
+  --surface: 220 37% 97%;
+  --surface-hover: 222 42% 95%;
+  --surface-disabled: 210 42% 95%;
+  --surface-primary: 221 100% 95%;
+  --surface-primary-hover: 222 100% 90%;
+  --surface-success: 147 66% 91%;
+  --surface-success-hover: 146 60% 78%;
+  --surface-warning: 24 100% 95%;
+  --surface-warning-hover: 24 100% 84%;
+  --surface-danger: 353 100% 95%;
+  --surface-danger-hover: 354 100% 85%;
+
+  /* Text Color Variables */
   --text: 223 29% 9%;
   --text-disabled: 219 30% 79%;
+  --text-secondary: 223 28% 28%;
+  --text-secondary-disabled: 219 30% 79%;
+  --text-tertiary: 223 26% 36%;
+  --text-tertiary-disabled: 219 30% 79%;
+  --text-primary: 223 100% 26%;
+  --text-primary-hover: 223 100% 16%;
+  --text-primary-active: 223 100% 8%;
+  --text-success: 144 100% 21%;
+  --text-success-hover: 144 100% 16%;
+  --text-success-active: 148 100% 5%;
+  --text-warning: 22 100% 47%;
+  --text-warning-hover: 22 100% 39%;
+  --text-warning-active: 22 100% 32%;
+  --text-danger: 354 97% 42%;
+  --text-danger-hover: 354 100% 31%;
+  --text-danger-active: 354 100% 22%;
 
+  /* Border Color Variables */
   --border: 224 43% 80%;
   --border-hover: 224 41% 75%;
   --border-disabled: 224 46% 86%;
+  --border-primary: 223 98% 54%;
+  --border-primary-hover: 223 98% 47%;
+  --border-success: 145 67% 36%;
+  --border-success-hover: 144 82% 28%;
+  --border-warning: 23 100% 58%;
+  --border-warning-hover: 22 100% 49%;
+  --border-danger: 354 86% 53%;
+  --border-danger-hover: 354 85% 49%;
 
-  --primary: 223 98% 47%;
-  --primary-hover: 223 100% 26%;
-
-  --success: 144, 82%, 28%;
-  --success-hover: 144, 100%, 21%;
-
-  --warning: 22 100% 49%;
-  --warning-hover: 22 100% 47%;
-
-  --danger: 354 85% 49%;
-  --danger-hover: 354 97% 42%;
+  /* Shape Color Variable */
+  /* --shape: 224 43% 80%;
+  --shape-hover: 224 41% 75%; */
+  --shape-disabled: 224 46% 86%;
+  --shape-primary: 223 98% 47%;
+  --shape-primary-hover: 223 100% 26%;
+  --shape-primary-active: 223 100% 16%;
+  --shape-success: 144 82% 28%;
+  --shape-success-hover: 144 100% 21%;
+  --shape-success-active: 144 100% 16%;
+  --shape-warning: 21 100% 49%;
+  --shape-warning-hover: 22 100% 47%;
+  --shape-warning-active: 22 100% 39%;
+  --shape-danger: 354 85% 49%;
+  --shape-danger-hover: 354 97% 42%;
+  --shape-danger-active: 354 100% 31%;
 }
 
 @media (prefers-color-scheme: dark) {

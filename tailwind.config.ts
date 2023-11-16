@@ -11,25 +11,106 @@ const config: Config = {
     extend: {
       colors: {
         page: 'hsl(var(--background))',
-        text: {
+        component: {
+          100: 'hsl(var(--component-background-1))',
+          200: 'hsl(var(--component-background-2))',
+        },
+        surface: {
+          DEFAULT: 'hsl(var(--surface))',
+          hover: 'hsl(var(--surface-hover))',
+          disabled: 'hsl(var(--surface-disabled))',
+          primary: {
+            DEFAULT: 'hsl(var(--surface-primary))',
+            hover: 'hsl(var(--surface-primary-hover))',
+          },
+          success: {
+            DEFAULT: 'hsl(var(--surface-success))',
+            hover: 'hsl(var(--surface-success-hover))',
+          },
+          warning: {
+            DEFAULT: 'hsl(var(--surface-warning))',
+            hover: 'hsl(var(--surface-warning-hover))',
+          },
+          danger: {
+            DEFAULT: 'hsl(var(--surface-danger))',
+            hover: 'hsl(var(--surface-danger-hover))',
+          },
+        },
+        body: {
           DEFAULT: 'hsl(var(--text))',
           disabled: 'hsl(var(--text-disabled))',
+          secondary: {
+            DEFAULT: 'hsl(var(--text-secondary))',
+            disabled: 'hsl(var(--text-secondary-disabled))',
+          },
+          tertiary: {
+            DEFAULT: 'hsl(var(--text-tertiary))',
+            disabled: 'hsl(var(--text-tertiary-disabled))',
+          },
+          primary: {
+            DEFAULT: 'hsl(var(--text-primary))',
+            hover: 'hsl(var(--text-primary-hover))',
+            active: 'hsl(var(--text-primary-active))',
+          },
+          success: {
+            DEFAULT: 'hsl(var(--text-success))',
+            hover: 'hsl(var(--text-success-hover))',
+            active: 'hsl(var(--text-success-active))',
+          },
+          warning: {
+            DEFAULT: 'hsl(var(--text-warning))',
+            hover: 'hsl(var(--text-warning-hover))',
+            active: 'hsl(var(--text-warning-active))',
+          },
+          danger: {
+            DEFAULT: 'hsl(var(--text-danger))',
+            hover: 'hsl(var(--text-danger-hover))',
+            active: 'hsl(var(--text-danger-active))',
+          },
         },
-        primary: {
-          DEFAULT: 'hsl(var(--primary))',
-          hover: 'hsl(var(--primary-hover))',
+        border: {
+          DEFAULT: 'hsl(var(--border))',
+          hover: 'hsl(var(--border-hover))',
+          disabled: 'hsl(var(--border-disabled))',
+          primary: {
+            DEFAULT: 'hsl(var(--border-primary))',
+            hover: 'hsl(var(--border-primary-hover))',
+          },
+          success: {
+            DEFAULT: 'hsl(var(--border-success))',
+            hover: 'hsl(var(--border-success-hover))',
+          },
+          warning: {
+            DEFAULT: 'hsl(var(--border-warning))',
+            hover: 'hsl(var(--border-warning-hover))',
+          },
+          danger: {
+            DEFAULT: 'hsl(var(--border-danger))',
+            hover: 'hsl(var(--border-danger-hover))',
+          },
         },
-        success: {
-          DEFAULT: 'hsl(var(--success))',
-          hover: 'hsl(var(--success-hover))',
-        },
-        warning: {
-          DEFAULT: 'hsl(var(--warning))',
-          hover: 'hsl(var(--warning-hover))',
-        },
-        danger: {
-          DEFAULT: 'hsl(var(--danger))',
-          hover: 'hsl(var(--danger-hover))',
+        shape: {
+          disabled: 'hsl(var(--shape-disabled))',
+          primary: {
+            DEFAULT: 'hsl(var(--shape-primary))',
+            hover: 'hsl(var(--shape-primary-hover))',
+            active: 'hsl(var(--shape-primary-active))',
+          },
+          success: {
+            DEFAULT: 'hsl(var(--shape-success))',
+            hover: 'hsl(var(--shape-success-hover))',
+            active: 'hsl(var(--shape-success-active))',
+          },
+          warning: {
+            DEFAULT: 'hsl(var(--shape-warning))',
+            hover: 'hsl(var(--shape-warning-hover))',
+            active: 'hsl(var(--shape-warning-active))',
+          },
+          danger: {
+            DEFAULT: 'hsl(var(--shape-danger))',
+            hover: 'hsl(var(--shape-danger-hover))',
+            active: 'hsl(var(--shape-danger-active))',
+          },
         },
       },
       keyframes: {
