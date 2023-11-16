@@ -16,10 +16,10 @@ export const textVariant = cva('leading-normal', {
     },
     color: {
       default: 'text-inherit',
-      info: 'text-primary',
-      success: 'text-success',
-      warning: 'text-warning',
-      danger: 'text-danger',
+      primary: 'text-body-primary',
+      success: 'text-body-success',
+      warning: 'text-body-warning',
+      danger: 'text-body-danger',
     },
     size: {
       small: 'text-xs',
