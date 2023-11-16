@@ -54,8 +54,11 @@
   --border-danger-hover: 354 85% 49%;
 
   /* Shape Color Variable */
-  /* --shape: 224 43% 80%;
-  --shape-hover: 224 41% 75%; */
+  --shape: 223 24% 52%;
+  --shape-hover: 223 26% 36%;
+  --shape-active: 223 28% 28%;
+  --shape-secondary: 223 26% 36%;
+  --shape-secondary-hover: 223 28% 28%;
   --shape-disabled: 224 46% 86%;
   --shape-primary: 223 98% 47%;
   --shape-primary-hover: 223 100% 26%;

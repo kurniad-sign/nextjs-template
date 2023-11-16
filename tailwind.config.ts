@@ -90,7 +90,14 @@ const config: Config = {
           },
         },
         shape: {
+          DEFAULT: 'hsl(var(--shape))',
+          hover: 'hsl(var--shape-hover)',
+          active: 'hsl(var--shape-active)',
           disabled: 'hsl(var(--shape-disabled))',
+          secondary: {
+            DEFAULT: 'hsl(var(--shape-secondary))',
+            hover: 'hsl(var(--shape-secondary-hover))',
+          },
           primary: {
             DEFAULT: 'hsl(var(--shape-primary))',
             hover: 'hsl(var(--shape-primary-hover))',
