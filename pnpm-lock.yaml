@@ -47,12 +47,18 @@ dependencies:
   react-hook-form:
     specifier: ^7.48.2
     version: 7.48.2(react@18.2.0)
+  react-stately:
+    specifier: ^3.28.0
+    version: 3.28.0(react@18.2.0)
   server-only:
     specifier: ^0.0.1
     version: 0.0.1
   zod:
     specifier: ^3.22.4
     version: 3.22.4
+  zustand:
+    specifier: ^4.4.6
+    version: 4.4.6(@types/react@18.2.37)(react@18.2.0)
 
 devDependencies:
   '@ianvs/prettier-plugin-sort-imports':
@@ -1381,6 +1387,16 @@ packages:
       react: 18.2.0
     dev: false
 
+  /@react-stately/data@3.11.0(react@18.2.0):
+    resolution: {integrity: sha512-0BlPT58WrAtUvpiEfUuyvIsGFTzp/9vA5y+pk53kGJhOdc5tqBGHi9cg40pYE/i1vdHJGMpyHGRD9nkQb8wN3Q==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@react-types/shared': 3.22.0(react@18.2.0)
+      '@swc/helpers': 0.5.2
+      react: 18.2.0
+    dev: false
+
   /@react-stately/datepicker@3.9.0(react@18.2.0):
     resolution: {integrity: sha512-p6BuxPbDxjIgBZmskdv2dR6XIdPEftCjS7kYe/+iLZxfz1vYiDqpJVb3ascLyBjl84bDDyr4z2vWcKhdDwyhEA==}
     peerDependencies:
@@ -1905,7 +1921,6 @@ packages:
 
   /@types/prop-types@15.7.10:
     resolution: {integrity: sha512-mxSnDQxPqsZxmeShFH+uwQ4kO4gcJcGahjjMFeLbKE95IAZiiZyiEepGZjtXJ7hN/yfu0bu9xN2ajcU0JcxX6A==}
-    dev: true
 
   /@types/react-dom@18.2.15:
     resolution: {integrity: sha512-HWMdW+7r7MR5+PZqJF6YFNSCtjz1T0dsvo/f1BV6HkV+6erD/nA7wd9NM00KVG83zf2nJ7uATPO9ttdIPvi3gg==}
@@ -1919,11 +1934,9 @@ packages:
       '@types/prop-types': 15.7.10
       '@types/scheduler': 0.16.6
       csstype: 3.1.2
-    dev: true
 
   /@types/scheduler@0.16.6:
     resolution: {integrity: sha512-Vlktnchmkylvc9SnwwwozTv04L/e1NykF5vgoQ0XTmI8DD+wxfjQuHuvHS3p0r2jz2x2ghPs2h1FVeDirIteWA==}
-    dev: true
 
   /@typescript-eslint/parser@6.11.0(eslint@8.53.0)(typescript@5.2.2):
     resolution: {integrity: sha512-+whEdjk+d5do5nxfxx73oanLL9ghKO3EwM9kBCkUtWMRwWuPaFv9ScuqlYfQ6pAD6ZiJhky7TZ2ZYhrMsfMxVQ==}
@@ -2354,7 +2367,6 @@ packages:
 
   /csstype@3.1.2:
     resolution: {integrity: sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==}
-    dev: true
 
   /damerau-levenshtein@1.0.8:
     resolution: {integrity: sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA==}
@@ -4012,6 +4024,37 @@ packages:
   /react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
+  /react-stately@3.28.0(react@18.2.0):
+    resolution: {integrity: sha512-owEHRGS1zRMwtiR/jeXUjUWyqk8oe53wNtedMvg9+8+NNhDKL4/DXHcIp2A13q08v09xYWgVPtnu8fsF53x2PQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@react-stately/calendar': 3.4.2(react@18.2.0)
+      '@react-stately/checkbox': 3.6.0(react@18.2.0)
+      '@react-stately/collections': 3.10.3(react@18.2.0)
+      '@react-stately/combobox': 3.8.0(react@18.2.0)
+      '@react-stately/data': 3.11.0(react@18.2.0)
+      '@react-stately/datepicker': 3.9.0(react@18.2.0)
+      '@react-stately/dnd': 3.2.6(react@18.2.0)
+      '@react-stately/form': 3.0.0(react@18.2.0)
+      '@react-stately/list': 3.10.1(react@18.2.0)
+      '@react-stately/menu': 3.5.7(react@18.2.0)
+      '@react-stately/numberfield': 3.7.0(react@18.2.0)
+      '@react-stately/overlays': 3.6.4(react@18.2.0)
+      '@react-stately/radio': 3.10.0(react@18.2.0)
+      '@react-stately/searchfield': 3.5.0(react@18.2.0)
+      '@react-stately/select': 3.6.0(react@18.2.0)
+      '@react-stately/selection': 3.14.1(react@18.2.0)
+      '@react-stately/slider': 3.4.5(react@18.2.0)
+      '@react-stately/table': 3.11.3(react@18.2.0)
+      '@react-stately/tabs': 3.6.2(react@18.2.0)
+      '@react-stately/toggle': 3.7.0(react@18.2.0)
+      '@react-stately/tooltip': 3.4.6(react@18.2.0)
+      '@react-stately/tree': 3.7.4(react@18.2.0)
+      '@react-types/shared': 3.22.0(react@18.2.0)
+      react: 18.2.0
+    dev: false
+
   /react@18.2.0:
     resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
     engines: {node: '>=0.10.0'}
@@ -4527,6 +4570,14 @@ packages:
       punycode: 2.3.1
     dev: true
 
+  /use-sync-external-store@1.2.0(react@18.2.0):
+    resolution: {integrity: sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
+
   /util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
     dev: true
@@ -4636,4 +4687,24 @@ packages:
 
   /zod@3.22.4:
     resolution: {integrity: sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==}
+    dev: false
+
+  /zustand@4.4.6(@types/react@18.2.37)(react@18.2.0):
+    resolution: {integrity: sha512-Rb16eW55gqL4W2XZpJh0fnrATxYEG3Apl2gfHTyDSE965x/zxslTikpNch0JgNjJA9zK6gEFW8Fl6d1rTZaqgg==}
+    engines: {node: '>=12.7.0'}
+    peerDependencies:
+      '@types/react': '>=16.8'
+      immer: '>=9.0'
+      react: '>=16.8'
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      immer:
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      '@types/react': 18.2.37
+      react: 18.2.0
+      use-sync-external-store: 1.2.0(react@18.2.0)
     dev: false
